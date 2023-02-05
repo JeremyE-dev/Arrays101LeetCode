@@ -1,0 +1,15 @@
+C:\Users\eudal\source\repos\Arrays101LeetCode\bin\Debug\net6.0\Arrays101LeetCode.exe
+C:\Users\eudal\source\repos\Arrays101LeetCode\bin\Debug\net6.0\Arrays101LeetCode.deps.json
+C:\Users\eudal\source\repos\Arrays101LeetCode\bin\Debug\net6.0\Arrays101LeetCode.runtimeconfig.json
+C:\Users\eudal\source\repos\Arrays101LeetCode\bin\Debug\net6.0\Arrays101LeetCode.dll
+C:\Users\eudal\source\repos\Arrays101LeetCode\bin\Debug\net6.0\Arrays101LeetCode.pdb
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.csproj.AssemblyReference.cache
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.AssemblyInfoInputs.cache
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.AssemblyInfo.cs
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.csproj.CoreCompileInputs.cache
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.dll
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\refint\Arrays101LeetCode.dll
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.pdb
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\Arrays101LeetCode.genruntimeconfig.cache
+C:\Users\eudal\source\repos\Arrays101LeetCode\obj\Debug\net6.0\ref\Arrays101LeetCode.dll

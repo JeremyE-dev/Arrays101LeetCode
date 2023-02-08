@@ -29,7 +29,7 @@ namespace Arrays101LeetCode
             if (nums.Length == 1 && nums[0] == 1)
             {
                 return 1;
-            } 
+            }
 
             int left = 0;
             int right = left + 1;
@@ -87,14 +87,14 @@ namespace Arrays101LeetCode
 
         public int FindNumbers(int[] nums)
         {
-          
+
             if (nums == null || nums.Length == 0)
             {
                 return 0;
             }
-            
-           int count = 0;
-           foreach (var num in nums)
+
+            int count = 0;
+            foreach (var num in nums)
             {
                 string numString = "";
                 numString = num.ToString();
@@ -107,5 +107,61 @@ namespace Arrays101LeetCode
 
             return count;
         }
+
+        public int[] sortedSquares(int[] nums)
+        {
+            int n = nums.Length;
+            int left = 0;
+            int right = n - 1;
+            int[] result = new int[n];
+
+            for (int i = n - 1; i >= 0; i--)
+            {
+                int square = 0;
+                if (Math.Abs(nums[left]) < Math.Abs(nums[right])) {
+                    square = nums[right];
+                    right--;
+                } else
+                {
+                    square = nums[left];
+                    left++; 
+                }
+                result[i] = square * square;
+            }
+
+            return result;
+
+        }
+
+       // a function to insert items at the beginning of an empty array
+       public void insertValuesIntoArray(int lengthOfArray, int rangeStart, int rangeEnd)
+        {
+            int[] a = new int[lengthOfArray];
+            int num = rangeStart;
+
+            for (int i = 0; i <= rangeEnd; i++)
+            {
+                a[i] = num;
+                num++;
+            }
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine($"Index: {i} Contains: {a[i]}");
+                Console.WriteLine(a[i]);
+            }
+
+        }
+
+        // a function to insert item at the end of an array
+
+        public void insertAtEnd()
+        {
+
+        }
+
+
+
+
     }
 }

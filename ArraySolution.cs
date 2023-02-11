@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -21,7 +22,7 @@ namespace Arrays101LeetCode
         public int maxConsecutiveOnes(int[] nums)
         {
             //boundary conditions
-            if (nums == null)
+            if (nums == null || nums.Length == 1 && nums[0] != 1)
             {
                 return 0;
             }
@@ -85,7 +86,7 @@ namespace Arrays101LeetCode
         //7896 contains 4 digits(even number of digits). 
         //Therefore only 12 and 7896 contain an even number of digits.
 
-        public int FindNumbers(int[] nums)
+        public int findNumbers(int[] nums)
         {
 
             if (nums == null || nums.Length == 0)
@@ -107,6 +108,23 @@ namespace Arrays101LeetCode
 
             return count;
         }
+
+
+        /**
+        Given an integer array nums sorted in non-decreasing order,
+        return an array of the squares of each number sorted in non-decreasing order.
+        
+        Example 1:
+
+        Input: nums = [-4, -1, 0, 3, 10]
+        Output: [0,1,9,16,100]
+        Explanation: After squaring, the array becomes[16, 1, 0, 9, 100].
+        After sorting, it becomes [0,1,9,16,100].
+        Example 2:
+
+        Input: nums = [-7, -3, 2, 3, 11]
+        Output: [4,9,9,49,121]
+        **/
 
         public int[] sortedSquares(int[] nums)
         {
@@ -133,32 +151,73 @@ namespace Arrays101LeetCode
 
         }
 
-       // a function to insert items at the beginning of an empty array
-       public void insertValuesIntoArray(int lengthOfArray, int rangeStart, int rangeEnd)
+        // Example function to insert items into an empty array and returns the new array
+        // used as a utility function to work with future array problems that need an array created
+        // example inserting and deleting exercises;
+
+        // test cases: 
+
+        public int[] insertValuesIntoArray(int lengthOfArray, int rangeEnd)
         {
+            if (rangeEnd > lengthOfArray)
+            {
+                throw new IndexOutOfRangeException();
+            }
+
             int[] a = new int[lengthOfArray];
-            int num = rangeStart;
 
-            for (int i = 0; i <= rangeEnd; i++)
+
+            for (int i = 0; i < rangeEnd; i++)
             {
-                a[i] = num;
-                num++;
+                a[i] = i;
             }
 
-            for (int i = 0; i < a.Length; i++)
-            {
-                Console.WriteLine($"Index: {i} Contains: {a[i]}");
-                Console.WriteLine(a[i]);
-            }
+            return a;
 
         }
 
-        // a function to insert item at the end of an array
+        // Example: insert items at the begining of an array
+        // assuming that an array has at least one spot left at the end
+        // insert one item at the end of an array of numbers
+        // item is the item to be inserted at the end of the array
+        // length is the length of the array to be passed into helper function
+        public int[] insertItemAtStartOfArray(int item, int length)
+        {
+            // for this example length should be at least one more then range
+            int[] intArray = insertValuesIntoArray(length, length - 1);
+
+            //shift everything over
+
+            // needed to reverse teh array to avoid over writing
+            // length needed to be lebgth -2 so not out of bounds
+
+          for (int i = length - 2; i >= 0; i--)
+            {
+                intArray[i + 1] = intArray[i];
+            }
+
+            intArray[0] = item;
+
+            return intArray;
+        }
+
+
+        // A function that inserts items at the end of an array
 
         public void insertAtEnd()
         {
 
         }
+
+        // A function that inserts items in the middle of an array
+
+        public void insertInTheMiddle()
+        {
+
+        }
+
+
+        
 
 
 

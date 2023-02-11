@@ -7,13 +7,8 @@ namespace Arrays101LeetCode
         static void Main(string[] args)
         {
 
-            ArraySolution insertValues = new ArraySolution();
-            
-            insertValues.insertValuesIntoArray(4, 1, 3);
-
-            Console.ReadLine(); 
     
-
+  
         }
 
         public static void printArray(int[] intArray)
